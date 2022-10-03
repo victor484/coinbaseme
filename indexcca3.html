@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from coinsignals.me/index.php?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Sep 2022 16:22:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000">
+    <title>Sign up | The New generation Crypto investment Platform</title>
+    
+    <link rel="icon" href="assets/img/favicon_ca.png">
+
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/grids.css"/>
+    <link rel="stylesheet" href="assets/css/fw.css"/>
+    <link rel="stylesheet" href="assets/css/fonts34d6.css"/>
+    <link rel="stylesheet" href="assets/css/styles34d6.css"/>
+
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/cube34d6.js"></script>
+
+    
+</head>
+<body class="has-image">
+        <div class="auth-box__content">
+        <div class="auth-box__container auth-box__container--large">
+                        <div class="auth-box__title">
+                Sign Up
+            </div>
+
+ 
+
+ <script language=javascript>
+ function checkform() {
+  if (document.regform.fullname.value == '') {
+    alert("Please enter your full name!");
+    document.regform.fullname.focus();
+    return false;
+  }
+ 
+  
+  if (document.regform.username.value == '') {
+    alert("Please enter your username!");
+    document.regform.username.focus();
+    return false;
+  }
+  if (!document.regform.username.value.match(/^[A-Za-z0-9_\-]+$/)) {
+    alert("For username you should use English letters and digits only!");
+    document.regform.username.focus();
+    return false;
+  }
+  if (document.regform.password.value == '') {
+    alert("Please enter your password!");
+    document.regform.password.focus();
+    return false;
+  }
+  if (document.regform.password.value != document.regform.password2.value) {
+    alert("Please check your password!");
+    document.regform.password2.focus();
+    return false;
+  }
+ 
+  
+  if (document.regform.email.value == '') {
+    alert("Please enter your e-mail address!");
+    document.regform.email.focus();
+    return false;
+  }
+  if (document.regform.email.value != document.regform.email1.value) {
+    alert("Please retupe your e-mail!");
+    document.regform.email.focus();
+    return false;
+  }
+
+  for (i in document.regform.elements) {
+    f = document.regform.elements[i];
+    if (f.name && f.name.match(/^pay_account/)) {
+      if (f.value == '') continue;
+      var notice = f.getAttribute('data-validate-notice');
+      var invalid = 0;
+      if (f.getAttribute('data-validate') == 'regexp') {
+        var re = new RegExp(f.getAttribute('data-validate-regexp'));
+        if (!f.value.match(re)) {
+          invalid = 1;
+        }
+      } else if (f.getAttribute('data-validate') == 'email') {
+        var re = /^[^\@]+\@[^\@]+\.\w{2,4}$/;
+        if (!f.value.match(re)) {
+          invalid = 1;
+        }
+      }
+      if (invalid) {
+        alert('Invalid account format. Expected '+notice);
+        f.focus();
+        return false;
+      }
+    }
+  }
+
+  if (document.regform.agree.checked == false) {
+    alert("You have to agree with the Terms and Conditions!");
+    return false;
+  }
+
+  return true;
+ }
+
+ function IsNumeric(sText) {
+  var ValidChars = "0123456789";
+  var IsNumber=true;
+  var Char;
+  if (sText == '') return false;
+  for (i = 0; i < sText.length && IsNumber == true; i++) { 
+    Char = sText.charAt(i); 
+    if (ValidChars.indexOf(Char) == -1) {
+      IsNumber = false;
+    }
+  }
+  return IsNumber;
+ }
+ </script>
+ 
+ 
+  
+ <div class="auth-box__form">
+<form method=post onsubmit="return checkform()" name="regform"><input type="hidden" name="form_id" value="16644684311008"><input type="hidden" name="form_token" value="d119d01b59413d7736fb191ed127fab1">
+<input type=hidden name=a value="signup">
+<input type=hidden name=action value="signup">
+<div class="form__input-container">
+
+ <input type=text name=fullname value=''  class="form__input form__input-full-width" placeholder="Fullname">
+
+</div>
+<div class="form__input-container">
+ <input type=text name=username value=''  class="form__input form__input-full-width" placeholder="Username">
+
+</div>
+<div class="form__input-container">
+ <input type=password name=password value=''  class="form__input form__input-full-width" placeholder="Password">
+
+</div>
+<div class="form__input-container">
+ <input type=password name=password2 value=''  class="form__input form__input-full-width" placeholder="Retype Password">
+
+</div>
+
+
+
+<div class="form__input-container">
+ <input type=text  class="form__input form__input-full-width" name="pay_account[1000][Your bitcoin wallet address]" value="" placeholder="Your bitcoin wallet address">
+
+</div>
+<div class="form__input-container">
+ <input type=text  class="form__input form__input-full-width" name="pay_account[1006][Info]" value="" placeholder="Info">
+
+</div>
+<div class="form__input-container">
+ <input type=text  class="form__input form__input-full-width" name="pay_account[1007][Info]" value="" placeholder="Info">
+
+</div>
+<div class="form__input-container">
+ <input type=text  class="form__input form__input-full-width" name="pay_account[1008][Info]" value="" placeholder="Info">
+
+</div>
+<div class="form__input-container">
+ <input type=text name=email value=''  class="form__input form__input-full-width" placeholder=" Email Address">
+
+</div>
+<div class="form__input-container">
+ <input type=text name=email1 value=''  class="form__input form__input-full-width" placeholder="Retype Email Address">
+</div>
+
+
+</div>
+
+                    <div class="form__input-container to-right">
+                        <label for="check">
+                            <input type="checkbox" name="agree" value=1  >
+                            I agree to <a href="indexa972.html?a=rules">Terms and conditions</a>
+                        </label>
+                    </div>
+
+                    <div class="form__input-container">
+                        <button type=submit class="button button-full-width button-success">
+                            Sign Up
+                        </button>
+                    </div>
+                    <div class="padded is-centered">
+                        <a href="indexc30b.html?a=login" class="is-bold">
+                            I already have an account
+                        </a>
+                    </div>
+
+</form>
+</div>
+</div>
+</div>
+
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5fe27a54df060f156a8f7509/1eq6arn5j';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  
+    
+
+
+  <div class="fixed-to-bottom">
+        <iframe class="ticker" src="http://www.exchangerates.org.uk/widget/ER-LRTICKER.php?w=2020&amp;s=1&amp;mc=USD&amp;mbg=F0F0F0&amp;bs=no&amp;bc=000014&amp;f=verdana&amp;fs=10px&amp;fc=000044&amp;lc=036EB4&amp;lhc=FE9A00&amp;vc=FE9A00&amp;vcu=008000&amp;vcd=FF0000&amp;" width="100%" height="30" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe>
+    </div> 
+</body>
+
+
+<!-- Mirrored from coinsignals.me/index.php?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Sep 2022 16:22:44 GMT -->
+</html>
+
